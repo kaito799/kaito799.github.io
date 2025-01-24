@@ -1,0 +1,71 @@
+/* 全体の基本設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background: #0078D7;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* ナビゲーションバー */
+nav {
+    background: #f4f4f4;
+    padding: 0.5rem;
+    text-align: center;
+}
+nav a {
+    color: #0078D7;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* セクションのレイアウト */
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 見出しスタイル */
+h1, h2 {
+    color: #0078D7;
+}
+
+/* プロジェクトのレイアウト */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.project {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.project img {
+    display: block;
+    max-width: 100%; /* 幅を親要素に合わせる */
+    height: auto; /* アスペクト比を保つ */
+    border-radius: 4px; /* 角を丸める */
+    margin: 8px 0; /* 上下の余白 */
+}
